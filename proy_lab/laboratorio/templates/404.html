@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Acceso Denegado{% endblock %}
+
+{% block content %}
+<div style="text-align: center; padding: 50px;">
+    <h1>Error 404: Página no encontrada</h1>
+    <p>Debes iniciar sesión para acceder a esta página.</p>
+
+    <a href="{% url 'index' %}">Volver al inicio</a>
+</div>
+{% endblock %} 

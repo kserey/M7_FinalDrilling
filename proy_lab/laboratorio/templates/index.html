@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-1">
+    <h1 class="text-center mb-4">Bienvenido a FitLife</h1>
+    
+    <div class="alert alert-info">
+        <h4>Bienvenido</h4>
+        <p>En esta aplicación podrás realizar las siguientes acciones:</p>
+    </div>
+    
+    <ul class="list-group">
+        <li class="list-group-item">
+            <strong>Registrarte como usuario nuevo:</strong> Se te otorgará acceso a la lista de clases disponibles, podrás reservar, y acceder a la lista de tus reservas, donde podrás eliminarlas si no puedes asistir.
+        </li>
+        <li class="list-group-item">
+            <strong>Iniciar sesión:</strong> Si ya tienes una cuenta, podrás acceder a la lista de clases disponibles, reservar, y acceder a la lista de tus reservas, donde podrás eliminarlas si no puedes asistir.
+        </li>
+        <li class="list-group-item">
+            <strong>Revisar las clases disponibles</strong> Si tienes los permisos necesarios, podrás generar una reserva en alguna de las clases disponibles.
+        </li>
+        <li class="list-group-item">
+            <strong>Acceder al módulo de administración:</strong> Si tienes permisos de administrador, podrás gestionar los datos de la aplicación.
+        </li>
+    </ul>
+
+    {% comment %} <div class="text-center mt-4">
+        <a href="{% url 'login' %}" class="btn btn-primary btn-lg">Iniciar sesión</a>
+        <a href="{% url 'register' %}" class="btn btn-success btn-lg ml-3">Registro</a>
+        <a href="/admin/" class="btn btn-danger btn-lg ml-3">Administración de Django</a>
+    </div> {% endcomment %}
+</div>
+
+{% endblock %}
