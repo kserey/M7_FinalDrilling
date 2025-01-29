@@ -7,8 +7,11 @@
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav me-auto">
-          <a class="nav-link" href="#">Info Labs</a>
+          <a class="nav-link" href="{% url 'laboratorio_list' %}">Info Labs</a>
       </div>
+      <div class="navbar-nav me-auto">
+        <a class="nav-link" href="{% url 'laboratorio_create' %}">Nuevo Lab</a>
+    </div>
     </div>
   </div>
 </nav>
