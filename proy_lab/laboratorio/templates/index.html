@@ -12,9 +12,9 @@
     
     <ul class="list-group">
         <li class="list-group-item">
-            <strong>Crear:</strong> Podrás crear nuevos registros de Laboratorio.
+            <strong>Crear:</strong> Podrás crear nuevos registros de Laboratorio en Nuevo Lab.
         </li>
-        <li class="list-group-item">
+        <li class="list-group-item">    
             <strong>Actualizar:</strong> Desde la sección Info Labs podrás editar los atributos de Nombre, Ciudad y País de los Laboratorios registrados.
         </li>
         <li class="list-group-item">
@@ -26,6 +26,8 @@
     </ul>
 
     <div class="text-center mt-4">
+        <a href="{% url 'laboratorio_list' %}" class="btn btn-info btn-lg ml-3">Info Labs</a>
+        <a href="{% url 'laboratorio_create' %}" class="btn btn-primary btn-lg ml-3">Nuevo Lab</a>
         <a href="/admin/" class="btn btn-danger btn-lg ml-3">Administración de Django</a>
     </div>
 </div>
