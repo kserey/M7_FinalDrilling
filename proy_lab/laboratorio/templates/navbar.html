@@ -1,32 +1,14 @@
 <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'index' %}">FitLife</a>
+    <a class="navbar-brand" href="{% url 'index' %}">Inicio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav me-auto">
-          <a class="nav-link" href="#">Buscar Clases</a>
-
-            <a class="nav-link" href="#">Mis Reservas</a>
-          
-
+          <a class="nav-link" href="#">Info Labs</a>
       </div>
-
-      {% comment %} <div class="navbar-nav">
-        {% if user.is_authenticated %}
-          <span class="nav-link">Bienvenido, {{ user.usuario.nombre }} {{ user.usuario.apellido }}</span>
-          <form method="post" action="{% url 'logout' %}" style="display: inline;">
-            {% csrf_token %}
-            <button type="submit" class="nav-link btn btn-link">Cerrar Sesión</button>
-          </form>
-        {% else %}
-          <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
-          <a class="nav-link" href="{% url 'register' %}">Registro</a>
-        {% endif %}
-      </div> {% endcomment %}
-
     </div>
   </div>
 </nav>
